@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="../media/ICT-logo.png">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @keyframes navbar-text {
+
+            from {
+                color: #472107;
+            }
+
+            to {
+                color: #40552E;
+            }
+
+        }
+    </style>
+  </head>
+  <body>
+
+<nav class="top-navbar">
+    <a href="index.html" class="logo">
+        <img src="../media/ICT-logo.png" alt="TEZDEN">
+        <span>TEZDEN</span>
+    </a>
+
+    <ul class="desktop-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Information</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="impact.html">Impact of Heatwaves</a></li>
+                <li><a class="dropdown-item" href="case-study.html">Central Myanmar Case Study</a></li>
+            </ul>
+        </li>
+        <li class="active"><a href="solutions.html">Preparedness & Response</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="aboutus.html#faq-section">FAQ</a></li>
+        <li class="signup-item"><a href="signup.html" class="signup-link">Sign Up</a></li>
+    </ul>
+
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="mobile-menu-button" aria-label="Open navigation menu">
+        <i class="bi bi-list menu-open"></i>
+        <i class="bi bi-x-lg menu-close"></i>
+    </label>
+
+    <div class="mobile-offcanvas">
+        <div class="offcanvas-header">
+            <a href="index.html" class="logo">
+                <img src="../media/ICT-logo.png" alt="TEZDEN">
+                <span>TEZDEN</span>
+            </a>
+
+            <label for="mobile-menu-toggle" class="mobile-close-button" aria-label="Close navigation menu">
+                <i class="bi bi-x-lg"></i>
+            </label>
+        </div>
+
+        <hr class="mobile-menu-divider">
+
+        <div class="offcanvas-body">
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="mobile-dropdown">
+                    <input type="checkbox" id="mobile-information">
+                    <label for="mobile-information">Information <i class="bi bi-chevron-down"></i></label>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="impact.html">Impact of Heatwaves</a></li>
+                        <li><a class="dropdown-item" href="case-study.html">Central Myanmar Case Study</a></li>
+                    </ul>
+                </li>
+                <li><a href="solutions.html">Preparedness & Response</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html#faq-section">FAQ</a></li>
+                <li><a href="signup.html" class="mobile-signup-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+ 
+ 
+<main class="solutions-page">
+    <section class="solutions-hero">
+        <div id="disasterCarousel" class="carousel slide carousel-fade"
+             data-bs-ride="carousel" data-bs-interval="5000">
+ 
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#disasterCarousel"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#disasterCarousel"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#disasterCarousel"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+ 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=85" class="hero-image" alt="Agricultural fields and farmland" height="500px">
+                    <div class="hero-overlay"></div>
+                    <div class="carousel-caption hero-caption">
+                        <h1>Prepare Today.<br>Protect Tomorrow.</h1>
+                        <p>
+                            Discover practical ways to prepare for extreme
+                            heat and protect farming communities in Central Myanmar.
+                        </p>
+                        <a href="#preparedness" class="hero-button">
+                            Explore Preparedness
+                        </a>
+                    </div>
+                </div>
+ 
+                <div class="carousel-item">
+                    <img
+                        src="https://i.pinimg.com/1200x/cd/be/0c/cdbe0ccf7a08aecae0b82eee73a6e687.jpg"
+                        class="hero-image"
+                        alt="Green landscape and agricultural land">
+                    <div class="hero-overlay"></div>
+                    <div class="carousel-caption hero-caption">
+                        <h2>Protect Crops.<br>Preserve Livelihoods.</h2>
+                        <p>
+                            Learn how farmers can adapt their practices
+                            to hotter conditions and changing rainfall.
+                        </p>
+                        <a href="#farming-solutions" class="hero-button">
+                            Discover Solutions
+                        </a>
+                    </div>
+                </div>
+ 
+                <div class="carousel-item">
+                    <img
+                        src="https://i.pinimg.com/1200x/b9/0c/87/b90c87217987bd21da82098d80f1c7c7.jpg"
+                        class="hero-image"
+                        alt="Green plants growing in natural sunlight">
+                    <div class="hero-overlay"></div>
+                    <div class="carousel-caption hero-caption">
+                        <h2>Small Actions.<br>Stronger Communities.</h2>
+                        <p>
+                            Water conservation, early preparation and
+                            community awareness can help reduce disaster risks.
+                        </p>
+                        <a href="#response" class="hero-button">
+                            Learn How to Respond
+                        </a>
+                    </div>
+                </div>
+            </div>
+ 
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#disasterCarousel" data-bs-slide="prev"
+                aria-label="Previous slide">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+            </button>
+ 
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#disasterCarousel" data-bs-slide="next"
+                aria-label="Next slide">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+            </button>
+ 
+        </div>
+    </section>
+ 
+    <!-- introduction -->
+    <section class="solutions-intro">
+        <div class="intro-content">
+            <h2>Preparedness Starts Before a Disaster</h2>
+            <p>
+                Extreme heat can affect human health, crop growth,
+                livestock and household income. Preparing in advance
+                helps communities reduce risks, use resources wisely
+                and respond more effectively when conditions become dangerous.
+            </p>
+ 
+            <div class="intro-stats">
+                <div class="intro-stat">
+                    <span>01</span>
+                    <p>Understand the risks</p>
+                </div>
+                <div class="intro-stat">
+                    <span>02</span>
+                    <p>Prepare in advance</p>
+                </div>
+                <div class="intro-stat">
+                    <span>03</span>
+                    <p>Respond safely</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- preparedness -->
+    <section class="solutions-section" id="preparedness">
+        <div class="section-heading">
+            <h2>Get Ready Before Temperatures Rise</h2>
+            <p>
+                Simple preparations can help protect people, crops
+                and essential resources during periods of extreme heat.
+            </p>
+        </div>
+ 
+        <div class="preparedness-grid">
+ 
+            <article class="preparedness-card">
+                <img
+                    src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=900&q=80"
+                    alt="Clean drinking water">
+                <div class="card-content">
+                    <span class="card-number">1| PERSONAL SAFETY</span>
+                    <h3>Prepare for the Heat</h3>
+                    <p>
+                        Keep safe drinking water available, identify cool
+                        or shaded places, wear lightweight clothing and
+                        plan outdoor work for cooler hours.
+                    </p>
+                </div>
+            </article>
+ 
+ 
+          <article class="preparedness-card">
+                <img
+                    src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=80"
+                    alt="Agricultural crops growing in a field">
+                <div class="card-content">
+                    <span class="card-number">2 | FARM PREPARATION</span>
+                    <h3>Plan for Crop Protection</h3>
+                    <p>
+                        Monitor weather forecasts, check soil moisture,
+                        plan irrigation carefully and consider crop
+                        varieties suited to local growing conditions.
+                    </p>
+                </div>
+            </article>
+ 
+            <article class="preparedness-card">
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                    alt="A community workspace">
+                <div class="card-content">
+                    <span class="card-number"> 3 | COMMUNITY AWARENESS</span>
+                    <h3>Share Reliable Information</h3>
+                    <p>
+                        Follow trusted weather warnings, share safety
+                        advice with neighbours and check that older
+                        adults and outdoor workers know how to stay safe.
+                    </p>
+                </div>
+            </article>
+ 
+        </div>
+    </section>
+ 
+    <section class="farming-feature" id="farming-solutions">
+        <div class="farming-image">
+            <img
+                src="https://i.pinimg.com/736x/54/fe/fd/54fefd8398135bd84aa9402eea4cf277.jpg"
+                alt="Farmland and agricultural crops">
+        </div>
+ 
+        <div class="farming-content">
+            <h2>Practical Solutions for Farmers</h2>
+            <p>
+                In Central Myanmar, hot conditions and irregular rainfall
+                can place pressure on crops and water supplies. Combining
+                locally appropriate farming methods can help reduce these risks.
+            </p>
+ 
+            <div class="farming-tip">
+                <span class="tip-icon">1</span>
+                <div>
+                    <h3>Use Water Efficiently</h3>
+                    <p>
+                        Check soil moisture, reduce unnecessary water loss
+                        and schedule irrigation according to crop needs.
+                    </p>
+                </div>
+            </div>
+ 
+            <div class="farming-tip">
+                <span class="tip-icon">2</span>
+                <div>
+                    <h3>Protect the Soil</h3>
+                    <p>
+                        Where suitable, use organic mulch to help conserve
+                        soil moisture and reduce direct sunlight on the soil.
+                    </p>
+                </div>
+            </div>
+ 
+            <div class="farming-tip">
+                <span class="tip-icon">3</span>
+                <div>
+                    <h3>Choose Suitable Crops</h3>
+                    <p>
+                        Explore locally suitable heat-tolerant varieties
+                        and planting schedules with agricultural advisers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="py-5" style="background-color: #3b5030; color: #ffffff;">
+  <div class="container">
+    <div class="mb-5 text-center">
+      <h2 class="fw-bold">Practical Solutions for Farmers</h2>
+      <p class="text-white-50">Detailed breakdown of climate-resilient agricultural strategies & suitable crop selections for Central Myanmar.</p>
+    </div>
+ 
+    <div class="card mb-4 border-0 shadow-sm text-dark overflow-hidden">
+      <div class="card-body p-4">
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge rounded-circle bg-success me-3 fs-5" style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">1</span>
+          <h3 class="h4 mb-0 fw-bold">Use Water Efficiently</h3>
+        </div>
+        <p class="text-muted">High temperatures and erratic rainfall make strategic water preservation essential to maintain crop yields and prevent severe thermal stress.</p>
+        <div class="row g-3">
+            
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/a9/1e/fa/a91efad988c6f888bc9e3b7f0d8ecabd.jpg" alt="Sorghum crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Soil Moisture Monitoring</h5>
+                </div>
+                <p class="small text-muted mb-0">Check dampness at 15cm root depth before watering. Using simple tensiometers or soil depth feelers avoids over-irrigation and root degradation.</p>
+              </div>
+            </div>
+          </div>
+ 
+           <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/e7/f0/a5/e7f0a527a629400844d2bdcb61efdbd7.jpg" alt="Pigeon pea crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Scheduled Irrigation</h5>
+                </div>
+                <p class="small text-muted mb-0">Irrigate strictly during early morning (5 AM – 8 AM) or late evening. This ensures root absorption before peak sunlight triggers rapid evaporation.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/ab/b6/1f/abb61f1bbd63f168cbc6eb4a79070b10.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Drip & Precision Delivery</h5>
+                </div>
+                <p class="small text-muted mb-0">Direct water straight to crop roots via low-cost drip tubing. This cuts evaporation waste by 40–60% compared to traditional flood irrigation.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/07/fd/ff/07fdffab98be18e9e24ebe332ef51b35.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Farm Ponds & Water Storage</h5>
+                </div>
+                <p class="small text-muted mb-0">Construct lined earth ponds (*Jalkunds*) to harvest excess monsoon runoff for emergency supplemental watering during prolonged dry spells.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/236x/87/67/a5/8767a5f1b142658bc36e8fffd3a2a899.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Alternate Wetting & Drying (AWD)</h5>
+                </div>
+                <p class="small text-muted mb-0">For flooded fields, allow soil to dry periodically before re-flooding to conserve water resources without compromising vegetative growth.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/e6/f6/59/e6f659d5f93f09fd58703234959d9a9f.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Sub-surface Drip Tubing</h5>
+                </div>
+                <p class="small text-muted mb-0">Install buried drip lines directly within root zones, completely shielding irrigation water from surface heat and wind-driven evaporation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="card mb-4 border-0 shadow-sm text-dark overflow-hidden">
+      <div class="card-body p-4">
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge rounded-circle bg-success me-3 fs-5" style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">2</span>
+          <h3 class="h4 mb-0 fw-bold">Protect the Soil</h3>
+        </div>
+        <p class="text-muted">Maintaining healthy, shaded soil stops moisture loss, regulates micro-climate temperatures, and shields beneficial soil microbes from scorching heatwaves.</p>
+ 
+        <div class="row g-3">
+            
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/56/10/fa/5610fa1113d3cfa169d8789ba5340df1.jpg" alt="Sorghum crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Organic Mulching</h5>
+                </div>
+                <p class="small text-muted mb-0">Apply a 5-10cm layer of paddy straw, groundnut shells, or dry leaves over topsoil to drop ground temperature by up to 5°C and conserve moisture.</p>
+              </div>
+            </div>
+          </div>
+ 
+           <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/df/eb/6a/dfeb6a9a54962cb0b016675e0256d9ce.jpg" alt="Pigeon pea crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Leguminous Cover Crops</h5>
+                </div>
+                <p class="small text-muted mb-0">Plant fast-growing legumes like Cowpea between main rows to shade topsoil, fix natural nitrogen, and reduce wind-driven soil erosion.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/7f/75/92/7f75926b70a73ec1e9e9c91765f7029e.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Zero / Minimum Tillage</h5>
+                </div>
+                <p class="small text-muted mb-0">Avoid deep plowing during heatwaves to maintain soil crust integrity, lock in subsurface moisture, and preserve delicate soil fungal networks.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/da/5b/63/da5b638e4cdf254720961edda85c9eba.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Biochar Soil Enrichment</h5>
+                </div>
+                <p class="small text-muted mb-0">Incorporate localized crop-waste biochar into topsoil to boost water retention capacity, improve aeration, and nourish beneficial soil microbes.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/22/83/34/22833446b20179dc4e4b676277d26bd9.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Contour Bunding & Terracing</h5>
+                </div>
+                <p class="small text-muted mb-0">Build earthen ridges along sloping farmland to slow down heavy rainwater run-off, encouraging deep soil infiltration and preventing topsoil loss.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/85/d8/ca/85d8ca858d3cd5a03677695610d00f0a.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-success">Agroforestry & Windbreaks</h5>
+                </div>
+                <p class="small text-muted mb-0">Plant rows of multi-purpose drought-resistant trees around field boundaries to block harsh drying winds and create localized cooling shade.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+    <div class="card border-0 shadow-sm text-dark overflow-hidden">
+      <div class="card-body p-4">
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge rounded-circle bg-success me-3 fs-5" style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">3</span>
+          <h3 class="h4 mb-0 fw-bold">Choose Suitable Crops</h3>
+        </div>
+        <p class="text-muted">Selecting resilient plant varieties and shifting agricultural practices mitigates total crop failure risks during extreme heatwaves and dry spells.</p>
+        
+        <div class="row g-3 mt-2 mb-4">
+          <div class="col-md-4">
+            <div class="p-3 border rounded bg-light h-100">
+              <h5 class="fw-semibold text-success fs-6">Heat & Drought Tolerance</h5>
+              <p class="small text-secondary mb-0">Transition to deep-rooted, low-water-demand crops that maintain stomatal control and photosynthesis under high ambient temperatures.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 border rounded bg-light h-100">
+              <h5 class="fw-semibold text-success fs-6">Adjusted Planting Windows</h5>
+              <p class="small text-secondary mb-0">Shift sowing schedules forward or backward based on localized meteorological forecasts rather than strictly following traditional calendars.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 border rounded bg-light h-100">
+              <h5 class="fw-semibold text-success fs-6">Crop Diversification & Intercropping</h5>
+              <p class="small text-secondary mb-0">Intercrop multiple varieties (e.g., Sesame with Pigeon Pea) to safeguard farm income if one crop suffers thermal stress.</p>
+            </div>
+          </div>
+        </div>
+ 
+        <h4 class="h6 fw-bold text-success text-uppercase tracking-wide mb-3 border-top pt-4">Recommended Crops for Heatwaves & Dry Zones</h4>
+ 
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/4f/cd/73/4fcd7318a45865824d1b1b25fd37492d.jpg" alt="Sorghum crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-dark">Sorghum (ပြောင်းဆန်)</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle">Cereal</span>
+                </div>
+                <p class="small text-muted mb-0">Extremely heat-tolerant with deep root systems. Uses 30% less water than maize and withstands soil temperatures up to 38°C.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/2f/dd/49/2fdd49c4e9c3869b232af7fc47bcffc0.jpg" alt="Pigeon pea crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-dark">Pigeon Pea (ပဲစင်းငုံ)</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle">Legume</span>
+                </div>
+                <p class="small text-muted mb-0">Deep taproots penetrate subsoil layers to access hidden moisture reserves, surviving severe heatwaves where standard pulses fail.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/736x/85/d8/ca/85d8ca858d3cd5a03677695610d00f0a.jpg" alt="Pearl millet crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-dark">Pearl Millet (မြက်ပြောင်း)</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle">Millet</span>
+                </div>
+                <p class="small text-muted mb-0">Thrives in low-nutrient sandy soils and ambient heat reaching 42°C with a short 60–75 day maturity cycle.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/04/c1/92/04c1929c651b650dd8b1ed9ab9641edf.jpg" alt="Sesame crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-dark">Sesame (နှမ်း)</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle">Oilseed</span>
+                </div>
+                <p class="small text-muted mb-0">Drought-resistant short-duration oilseed. Indigenous varieties show high thermal tolerance during early growth stages.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/a3/1f/95/a31f950ebfb99020e3c18a78e6dbfcb1.jpg" alt="Green gram mung bean crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-dark">Green Gram(ပဲတီစိမ်း)</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle">Pulse</span>
+                </div>
+                <p class="small text-muted mb-0">Fast 60-day maturation period avoids long heatwaves, providing a reliable catch-crop while enriching nitrogen levels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border border-success-subtle overflow-hidden">
+              <img src="https://i.pinimg.com/1200x/98/91/38/9891383f155062d7e608cd1e9f734f61.jpg" alt="Cassava and sweet potato crop" class="card-img-top" style="height: 160px; object-fit: cover;">
+              <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="fw-bold mb-0 fs-6 text-dark">Cassava & Sweet Potato</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle">Tuber</span>
+                </div>
+                <p class="small text-muted mb-0">Underground tuber development protects edible yield from scorching surface heat waves, providing a resilient fallback crop.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+    <!-- Response -->
+    <section class="solutions-section response-area" id="response">
+        <div class="section-heading">
+            <h2>Know How to Respond</h2>
+            <p>
+                Recognising dangerous conditions and acting early
+                can help prevent serious harm.
+            </p>
+        </div>
+ 
+        <div class="response-flex">
+ 
+            <article class="response-card">
+                <div class="response-top">
+                    <span class="response-icon">1</span>
+                    <span class="response-label">FOR PEOPLE</span>
+                </div>
+                <h3>Protect Human Health</h3>
+                <ul>
+                    <li>Move to a cool or shaded place.</li>
+                    <li>Drink water regularly.</li>
+                    <li>Pause strenuous activity during peak heat.</li>
+                    <li>Check on vulnerable people.</li>
+                    <li>Seek urgent medical help for suspected heatstroke.</li>
+                </ul>
+            </article>
+ 
+            <article class="response-card">
+                <div class="response-top">
+                    <span class="response-icon">2</span>
+                    <span class="response-label">FOR FARMERS</span>
+                </div>
+                <h3>Reduce Agricultural Losses</h3>
+                <ul>
+                    <li>Check crops for heat stress and wilting.</li>
+                    <li>Prioritise available water carefully.</li>
+                    <li>Follow local agricultural advice.</li>
+                    <li>Protect livestock with shade and safe drinking water.</li>
+                    <li>Record crop damage and changing conditions.</li>
+                </ul>
+            </article>
+ 
+            <article class="response-card">
+                <div class="response-top">
+                    <span class="response-icon">3</span>
+                    <span class="response-label">FOR COMMUNITIES</span>
+                </div>
+                <h3>Support One Another</h3>
+                <ul>
+                    <li>Share verified weather warnings.</li>
+                    <li>Help people who may need assistance.</li>
+                    <li>Identify accessible cool places.</li>
+                    <li>Report urgent health concerns.</li>
+                    <li>Follow guidance from local authorities.</li>
+                </ul>
+            </article>
+ 
+        </div>
+    </section>
+ 
+    <section class="solutions-ending">
+        <div class="ending-content">
+            <span class="eyebrow">EVERY ACTION COUNTS</span>
+            <h2>A Resilient Community Begins With Preparation</h2>
+            <p>
+                Protecting lives and livelihoods takes awareness,
+                cooperation and practical action. Start with what
+                you can do today.
+            </p>
+            <a href="impact.html" class="ending-button">
+                Explore the Impacts of Heatwaves
+            </a>
+        </div>
+    </section>
+</main>
+ 
+<div class="offcanvas offcanvas-start mobile-offcanvas" tabindex="-1" id="mobileNavbar" aria-labelledby="mobileNavbarLabel">
+    <div class="offcanvas-header">
+        <a href="homepage.html" class="logo" id="mobileNavbarLabel" aria-label="TEZDEN homepage">
+            <img src="../media/ICT-logo.png" alt="TEZDEN">
+            <span>TEZDEN</span>
+        </a>
+        <button type="button" class="mobile-close-button" data-bs-dismiss="offcanvas" aria-label="Close navigation menu">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+ 
+    <hr class="mobile-menu-divider">
+ 
+    <div class="offcanvas-body">
+        <ul class="mobile-nav">
+            <li>
+                <a href="homepage.html"
+                   data-bs-dismiss="offcanvas">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Information
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="impact.html" data-bs-dismiss="offcanvas">
+                            Impact of Heatwaves
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="case-study.html" data-bs-dismiss="offcanvas">
+                            Central Myanmar Case Study
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="solutions.html" data-bs-dismiss="offcanvas">Preparedness & Response</a></li>
+            <li><a href="aboutus.html" data-bs-dismiss="offcanvas">About Us</a></li>
+            <li><a href="about-us.html#FAQ" data-bs-dismiss="offcanvas">FAQ</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            
+        </ul>
+    </div>
+</div>
+<section class="collapse-solutions-section">
+  <div class="container">
+ 
+    <div class="text-center mb-4">
+      <p class="solutions-eyebrow">PRACTICAL ACTIONS</p>
+      <h2 class="solutions-heading">Explore Heatwave Solutions</h2>
+      <p class="solutions-description">
+        Discover practical ways to protect people, farms, and communities
+        before, during, and after extreme heat.
+      </p>
+    </div>
+ 
+    <div class="accordion" id="heatSolutionsAccordion">
+ 
+      <!-- 01: Prepare Before a Heatwave -->
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#beforeHeat"
+            aria-expanded="true"
+            aria-controls="beforeHeat">
+            <span class="solution-number">1</span>
+            Prepare Before a Heatwave
+          </button>
+        </h3>
+ 
+        <div id="beforeHeat"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#heatSolutionsAccordion">
+          <div class="accordion-body">
+            <img
+              src="https://i.pinimg.com/736x/da/33/d4/da33d4a217e3fbeb58a5dbc9be4b52cb.jpg"
+              alt="Green trees and nature"
+              class="solution-image">
+ 
+            <p>
+              Preparing early can reduce the risks of extreme heat and help
+              families and farmers protect their resources.
+            </p>
+ 
+            <ul>
+              <li>Check weather forecasts and heat warnings regularly.</li>
+              <li>Store safe drinking water and prepare a cool, shaded place.</li>
+              <li>Plan outdoor work for cooler hours, such as early morning.</li>
+              <li>Prepare emergency contacts and check on vulnerable neighbours.</li>
+              <li>Farmers can plan water use and prepare shade for livestock.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#duringHeat" aria-expanded="false" aria-controls="duringHeat">
+            <span class="solution-number">2</span>
+            Stay Safe During a Heatwave
+          </button>
+        </h3>
+ 
+        <div id="duringHeat" class="accordion-collapse collapse" data-bs-parent="#heatSolutionsAccordion">
+          <div class="accordion-body">
+            <img src="https://i.pinimg.com/736x/92/e8/b8/92e8b85fc66a0cd65bc86b7c0a4132ed.jpg" alt="Agricultural fields under the sun" class="solution-image">
+ 
+            <ul>
+              <li>Drink water regularly and rest in a cool or shaded area.</li>
+              <li>Wear lightweight, breathable clothing.</li>
+              <li>Reduce strenuous activity during the hottest hours.</li>
+              <li>Never leave children or pets inside a parked vehicle.</li>
+              <li>Give livestock access to clean water and shade.</li>
+              <li>Watch for dizziness, headaches, nausea, and unusual weakness.</li>
+            </ul>
+ 
+            <div class="solution-warning">
+              <strong>Recognise an emergency:</strong>
+              Confusion, seizures, or loss of consciousness during extreme
+              heat may indicate heatstroke. Seek emergency medical help
+              immediately and begin cooling the person while help is coming.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#farmHeat" aria-expanded="false" aria-controls="farmHeat">
+            <span class="solution-number">3</span>
+            Protect Farms and Livestock
+          </button>
+        </h3>
+ 
+        <div id="farmHeat" class="accordion-collapse collapse" data-bs-parent="#heatSolutionsAccordion">
+          <div class="accordion-body">
+            <img src="https://i.pinimg.com/736x/e5/41/2e/e5412e4326624e73af60cf5cc2ba5a56.jpg" alt="Farmland and crops" class="solution-image">
+            <p>
+              Extreme heat can increase water demand, stress crops and
+              livestock, and reduce agricultural productivity.
+            </p>
+ 
+            <ul>
+              <li>Water crops according to their needs and local conditions.</li>
+              <li>Use mulch where suitable to help soil retain moisture.</li>
+              <li>Maintain shade and ventilation for livestock.</li>
+              <li>Provide animals with reliable access to clean drinking water.</li>
+              <li>Monitor crops for heat stress and adjust farm activities when possible.</li>
+              <li>Discuss locally suitable crop varieties and planting schedules with agricultural advisers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#communityHeat" aria-expanded="false" aria-controls="communityHeat">
+            <span class="solution-number">4</span>
+            Protect the Community
+          </button>
+        </h3>
+ 
+        <div id="communityHeat" class="accordion-collapse collapse" data-bs-parent="#heatSolutionsAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Share verified heat warnings with family, friends, and neighbours.</li>
+              <li>Check on older adults, young children, and people who work outdoors.</li>
+              <li>Encourage schools and workplaces to provide water, shade, and rest breaks.</li>
+              <li>Plant and protect trees where appropriate to increase shade over time.</li>
+              <li>Share reliable information instead of spreading unverified advice.</li>
+            </ul>
+ 
+            <p>
+              <strong>Small actions matter:</strong>
+              Communities can reduce heat-related risks when people share
+              information and look out for one another.
+            </p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afterHeat" aria-expanded="false" aria-controls="afterHeat">
+            <span class="solution-number">5</span>
+            Recover After a Heatwave
+          </button>
+        </h3>
+ 
+        <div id="afterHeat" class="accordion-collapse collapse" data-bs-parent="#heatSolutionsAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Continue drinking water and allow time for recovery.</li>
+              <li>Seek medical advice if symptoms persist or worsen.</li>
+              <li>Check crops and livestock for signs of heat-related damage.</li>
+              <li>Review water supplies and identify what could be improved.</li>
+              <li>Record lessons learned to improve preparation for future heatwaves.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#heatResources" aria-expanded="false" aria-controls="heatResources">
+            <span class="solution-number">6</span>
+            Trusted Resources
+          </button>
+        </h3>
+ 
+        <div id="heatResources" class="accordion-collapse collapse" data-bs-parent="#heatSolutionsAccordion">
+          <div class="accordion-body">
+            <p>Explore these trusted sources for more information:</p>
+ 
+            <ul>
+              <li>
+                <a class="solution-resource-link"
+                  href="https://www.who.int/news-room/questions-and-answers/item/heatwaves-how-to-stay-cool"
+                  target="_blank" rel="noopener noreferrer">
+                  WHO: How to Stay Cool During Heatwaves
+                </a>
+              </li>
+ 
+              <li>
+                <a class="solution-resource-link"
+                  href="https://www.who.int/myanmar/emergencies/protect-yourself-from-heat--heatwave"
+                  target="_blank" rel="noopener noreferrer">
+                  WHO Myanmar: Protect Yourself from Heat
+                </a>
+              </li>
+ 
+              <li>
+                <a class="solution-resource-link"
+                  href="https://www.fao.org/newsroom/story/the-heat-is-on/en"
+                  target="_blank" rel="noopener noreferrer">
+                  FAO: The Heat Is On
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer class="footer">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h5>About TEZDEN</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Our Project</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.html#FAQ">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Learn</h5>
+                    <ul class="footer-links">
+                        <li><a href="impact.html">Impact of Heatwaves</a></li>
+                        <li><a href="case-study.html">Central Myanmar Case Study</a></li>
+                        <li><a href="solutions.html">Preparedness & Response</a></li>
+                        <li><a href="https://docs.google.com/document/d/1P5Y_rO6LgsWXj8gFk443rbUh8mIfK-OQJCZQqrPFsy8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> Research & References</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Highlights</h5>
+                    <ul class="footer-links">
+                        <li><a href="impact.html">Heatwaves Impact on Farming</a></li>
+                        <li><a href="impact.html">Heatwaves Impact on Economy</a></li>
+                        <li><a href="solutions.html">Farming Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>Stay Connected</h5>
+                    <p>Learn more about heatwaves and discover ways to protect farming in Central Myanmar by subscribing today.</p>
+                    <form class="footer-email" method="post" enctype="text/plain">
+                        <input type="text" name="email" placeholder="Your Email" aria-label="Your email address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <h5 class="mt-4">Follow Our Project</h5>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2026 TEZDEN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
+ 

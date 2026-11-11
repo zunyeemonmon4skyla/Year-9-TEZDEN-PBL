@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Myanmar Case Study</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../media/ICT-logo.png">
+    <link rel="stylesheet" href="index2.css">
+
+    <style>
+        body {
+            background: #FFF3D6;
+            color: #40552E;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="top-navbar">
+    <a href="index.html" class="logo">
+        <img src="../media/ICT-logo.png" alt="TEZDEN">
+        <span>TEZDEN</span>
+    </a>
+
+    <ul class="desktop-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown active">
+            <a href="#" class="dropdown-toggle">Information</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="impact.html">Impact of Heatwaves</a></li>
+                <li class="active"><a class="dropdown-item" href="case-study.html">Central Myanmar Case Study</a></li>
+            </ul>
+        </li>
+        <li><a href="solutions.html">Preparedness & Response</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="aboutus.html#faq-section">FAQ</a></li>
+        <li class="signup-item"><a href="signup.html" class="signup-link">Sign Up</a></li>
+    </ul>
+
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="mobile-menu-button" aria-label="Open navigation menu">
+        <i class="bi bi-list menu-open"></i>
+        <i class="bi bi-x-lg menu-close"></i>
+    </label>
+
+    <div class="mobile-offcanvas">
+        <div class="offcanvas-header">
+            <a href="index.html" class="logo">
+                <img src="../media/ICT-logo.png" alt="TEZDEN">
+                <span>TEZDEN</span>
+            </a>
+
+            <label for="mobile-menu-toggle" class="mobile-close-button" aria-label="Close navigation menu">
+                <i class="bi bi-x-lg"></i>
+            </label>
+        </div>
+
+        <hr class="mobile-menu-divider">
+
+        <div class="offcanvas-body">
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="mobile-dropdown">
+                    <input type="checkbox" id="mobile-information">
+                    <label for="mobile-information">Information <i class="bi bi-chevron-down"></i></label>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="impact.html">Impact of Heatwaves</a></li>
+                        <li><a class="dropdown-item" href="case-study.html">Central Myanmar Case Study</a></li>
+                    </ul>
+                </li>
+                <li><a href="solutions.html">Preparedness & Response</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html#faq-section">FAQ</a></li>
+                <li><a href="signup.html" class="mobile-signup-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="case-hero">
+    <div class="container">
+        <p class="text-uppercase fw-bold">Local Case Study</p>
+        <h1>Heatwaves in Central Myanmar</h1>
+        <p>Understanding the effects of extreme heat on farming and agriculture.</p>
+    </div>
+</header>
+
+<!-- Introduction -->
+<section class="case-intro">
+    <h2>Understanding Our Local Perspective</h2>
+    <p>Heatwaves are becoming an important environmental challenge in Central Myanmar. Rising temperatures and prolonged periods of extreme heat can affect crop growth, water availability, soil conditions, and farmers' daily activities. This case study explores the effects of heatwaves on agriculture through data, research, and local perspectives.</p>
+</section>
+
+<section class="container case-section">
+    <ul class="nav nav-tabs case-tabs justify-content-center" id="caseStudyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="data-tab" data-bs-toggle="tab" data-bs-target="#data-content" type="button" role="tab" aria-controls="data-content" aria-selected="true"></i>Data & Statistics</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info-content" type="button" role="tab" aria-controls="info-content" aria-selected="false"></i>Information & Documentary</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="caseStudyContent">
+        <div class="tab-pane fade show active" id="data-content" role="tabpanel" aria-labelledby="data-tab">
+            <h2 class="section-title text-center">Heatwaves in Numbers</h2>
+            <p class="text-center mb-5">Explore the data and statistics related to heatwaves and agriculture.</p>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-thermometer-high"></i></div>
+                        <h3>48.2°C</h3>
+                        <p>Myanmar's highest recorded temperature, measured in Chauk, Magway Region, on 28 April 2024.</p>
+                        <span class="stat-source">Source: <a href="https://wmo.int/news/media-centre/rising-temperatures-and-extreme-weather-hit-asia-hard" target="_blank" rel="noopener">WMO (2025)</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-droplet-half"></i></div>
+                        <h3>25%</h3>
+                        <p>Decline in cereal harvests in a Kyrgyzstan case following prolonged extreme heat in 2025.</p>
+                        <span class="stat-source">Source: <a href="https://www.fao.org/newsroom/detail/extreme-heat-is-pushing-agrifood-systems-to-the-brink-worldwide/en" target="_blank" rel="noopener">FAO (2026)</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="bi bi-flower1"></i></div>
+                        <h3>21%</h3>
+                        <p>Estimated global agricultural productivity loss caused by heat stress since 1961.</p>
+                        <span class="stat-source">Source: <a href="https://www.un.org/climatesecuritymechanism/sites/default/files/2026-05/FAO-WMO-Extreme-Heat-Report-2026_en.pdf" target="_blank" rel="noopener">FAO - WMO Report</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- for the vertical bar charts -->
+            <h3 class="section-title">Temperature Trends</h3>
+            <div class="css-chart">
+                <h4>Chauk's Annual Highest Temperatures</h4>
+                <p class="chart-description">Highest daily temperature recorded each year (°C)</p>
+
+                <div class="vertical-chart">
+                    <div class="vertical-bar" style="height: 86.2%;"><span>43.1</span></div>
+                    <div class="vertical-bar" style="height: 87%;"><span>43.5</span></div>
+                    <div class="vertical-bar" style="height: 80.6%;"><span>40.3</span></div>
+                    <div class="vertical-bar" style="height: 84%;"><span>42.0</span></div>
+                    <div class="vertical-bar record-bar" style="height: 89.2%;"><span>44.6</span></div>
+                    <div class="vertical-bar" style="height: 82.2%;"><span>41.1</span></div>
+                </div>
+
+                <div class="vertical-labels">
+                    <span>2020</span>
+                    <span>2021</span>
+                    <span>2022</span>
+                    <span>2023</span>
+                    <span>2024</span>
+                    <span>2025</span>
+                </div>
+
+                <p class="chart-source">Source: <a href="https://climatememory.com/en/climate/myanmar/chauk" target="_blank" rel="noopener">Chauk Climate Archive</a></p>
+            </div>
+
+
+            <!-- this for the horizontal bar chart -->
+            <h3 class="section-title">Heatwaves and Agriculture</h3>
+            <div class="css-chart">
+                <h4>Crop Yield Impact per 1°C Warming</h4>
+                <p class="chart-description">Estimated global average yield change (%)</p>
+
+                <div class="crop-row">
+                    <span class="crop-label">Maize</span>
+                    <div class="crop-background"><div class="maize-bar"></div></div>
+                    <span class="crop-value">-7.5%</span>
+                </div>
+
+                <div class="crop-row">
+                    <span class="crop-label">Rice</span>
+                    <div class="crop-background"><div class="rice-bar"></div></div>
+                    <span class="crop-value">-1.2%</span>
+                </div>
+
+                <div class="crop-row">
+                    <span class="crop-label">Soybean</span>
+                    <div class="crop-background"><div class="soybean-bar"></div></div>
+                    <span class="crop-value">-6.8%</span>
+                </div>
+
+                <div class="crop-row">
+                    <span class="crop-label">Wheat</span>
+                    <div class="crop-background"><div class="wheat-bar"></div></div>
+                    <span class="crop-value">-6.0%</span>
+                </div>
+
+                <div class="crop-scale">
+                    <span>0%</span>
+                    <span>-10%</span>
+                </div>
+
+                <p class="chart-source">Source: <a href="https://www.un.org/climatesecuritymechanism/sites/default/files/2026-05/FAO-WMO-Extreme-Heat-Report-2026_en.pdf" target="_blank" rel="noopener">FAO - WMO Report</a></p>
+            </div>
+
+
+            <!-- data from our survey form about heatwaves in central myanmar -->
+            <h3 class="section-title">Local Survey Results</h3>
+            <p>Our survey explores how people in Central Myanmar understand heatwaves and their effects on farming and agriculture.</p>
+
+            <div class="survey-results-container">
+                <div class="survey-overview">
+                    <h4>About Survey</h4>
+                    <p>Our survey collected responses from 26 participants about heatwaves, El Niño, and their effects on farming and agriculture in Central Myanmar.</p>
+                    <ul><li><a href="https://forms.cloud.microsoft/r/iQxMtjWRDs" target="_blank" rel="noopener">This is our survey link!</a></li></ul>
+                </div>
+
+                <div class="survey-results-grid">
+                    <div class="survey-category">
+                        <h4>Awareness & Heat Perception</h4>
+                        <p>Understood El Niño well</p>
+                        <div class="survey-result-value">50%</div>
+                        <div class="survey-bar">
+                            <div class="survey-bar-fill" style="width:50%;"></div>
+                        </div>
+
+                        <p>Experienced much hotter conditions</p>
+                        <div class="survey-result-value">62%</div>
+                        <div class="survey-bar">
+                            <div class="survey-bar-fill" style="width:62%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="survey-category">
+                        <h4>Agricultural & Crop Impacts</h4>
+
+                        <p>Noticed farm effects</p>
+                        <div class="survey-result-value">69%</div>
+                        <div class="survey-bar">
+                            <div class="survey-bar-fill" style="width:69%;"></div>
+                        </div>
+
+                        <p>Most reported crop impact</p>
+                        <div class="survey-result-value">17 people</div>
+                        <p>Crops drying out or wilting</p>
+
+                        <div class="survey-mini-result">
+                            <span>Water shortages for irrigation</span>
+                            <strong>11</strong>
+                        </div>
+                        <div class="survey-mini-result">
+                            <span>Lower harvest amounts</span>
+                            <strong>10</strong>
+                        </div>
+                        <div class="survey-mini-result">
+                            <span>Poorer crop quality</span>
+                            <strong>10</strong>
+                        </div>
+                    </div>
+
+                    <div class="survey-category">
+                        <h4>Water & Food Security</h4>
+
+                        <p>Water became less available</p>
+                        <div class="survey-result-value">73%</div>
+                        <div class="survey-bar">
+                            <div class="survey-bar-fill" style="width:73%;"></div>
+                        </div>
+
+                        <p>Food became more expensive and less available</p>
+                        <div class="survey-result-value">38%</div>
+                        <div class="survey-bar">
+                            <div class="survey-bar-fill" style="width:38%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="survey-category">
+                        <h4>Community Effects</h4>
+
+                        <div class="survey-mini-result">
+                            <span>Higher food expenses</span>
+                            <strong>13</strong>
+                        </div>
+                        <div class="survey-mini-result">
+                            <span>Reduced agricultural income</span>
+                            <strong>10</strong>
+                        </div>
+                        <div class="survey-mini-result">
+                            <span>Water shortages</span>
+                            <strong>8</strong>
+                        </div>
+                        <div class="survey-mini-result">
+                            <span>Difficulty finding foods</span>
+                            <strong>6</strong>
+                        </div>
+
+                        <hr>
+
+                        <p class="survey-highlight">Most useful information source</p>
+                        <div class="survey-result-value">Social Media</div>
+                    </div>
+                </div>
+
+                <div class="survey-priority">
+                    <h4>Solutions & Urgency</h4>
+
+                    <p>Importance of taking protective action</p>
+                    <div class="survey-result-value">4.35 / 5</div>
+
+                    <div class="survey-bar">
+                        <div class="survey-bar-fill" style="width:87%;"></div>
+                    </div>
+
+                    <p>15 respondents gave the highest rating.</p>
+
+                    <hr>
+
+                    <p class="survey-highlight">Highest Priority Action</p>
+                    <h5>Improving Access to Water & Irrigation</h5>
+                </div>
+            </div>
+
+
+            <!-- sources of just this case-study page -->
+            <h3 class="section-title">Data Sources</h3>
+            <ul class="source-list">
+                <li><a href="https://www.fao.org/" target="_blank" rel="noopener">Food and Agriculture Organization (FAO)</a></li>
+                <li><a href="https://wmo.int/" target="_blank" rel="noopener">World Meteorological Organization (WMO)</a></li>
+                <li><a href="https://meral.edu.mm/" target="_blank" rel="noopener">Myanmar Education Research and Learning Portal (MERAL)</a></li>
+            </ul>
+        </div>
+
+        <!-- information & documentary tab -->
+        <div class="tab-pane fade" id="info-content" role="tabpanel" aria-labelledby="info-tab">
+            <h2 class="section-title text-center">Understanding Heatwaves</h2>
+            <p class="text-center mb-5">Learn about the causes, effects, and agricultural challenges of extreme heat.</p>
+
+            <!-- summary background Information -->
+            <h3 class="section-title">Background Information</h3>
+            <div class="info-card mb-5">
+                <p>A heatwave is a period of unusually high temperatures lasting for several days or longer. It can occur when high-pressure systems trap hot air over an area. In Central Myanmar, extreme heat can increase evaporation, reduce soil moisture, and place additional pressure on agricultural water supplies.</p>
+                <p>El Niño can influence regional temperature and rainfall patterns, potentially increasing the risk of hot and dry conditions. However, its effects vary between seasons and locations.</p>
+            </div>
+
+            <!-- the impacts on agriculture -->
+            <h3 class="section-title">How Heatwaves Affect Agriculture</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <i class="bi bi-flower1"></i>
+                        <h4>Crop Growth</h4>
+                        <p>Extreme temperatures can interfere with crop development, flowering, and grain formation, reducing agricultural productivity.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <i class="bi bi-droplet"></i>
+                        <h4>Water Shortages</h4>
+                        <p>High temperatures increase evaporation and crop water demand, making irrigation more difficult during dry periods.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <i class="bi bi-moisture"></i>
+                        <h4>Soil Conditions</h4>
+                        <p>Heat and limited rainfall can reduce soil moisture and make it harder for crops to obtain enough water.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <i class="bi bi-person-workspace"></i>
+                        <h4>Farming Challenges</h4>
+                        <p>Farmers may face higher irrigation costs, difficult working conditions, and greater uncertainty about crop production.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Perspectives -->
+            <div class="local-perspective">
+                <h3>Local Perspectives</h3>
+                <p>Heatwaves can create serious challenges for farmers in Central Myanmar, particularly when extreme temperatures occur alongside limited rainfall or irrigation water. Local experiences can help explain how these conditions affect crop growth, farming activities, and agricultural livelihoods.</p>
+                <p>Interviews and survey responses from local communities can provide additional evidence about these challenges.</p>
+            </div>
+
+            <!-- Documentary -->
+            <h3 class="section-title">Heatwaves and Agriculture Documentary</h3>
+            <p>Watch our documentary to explore the relationship between extreme heat and agriculture.</p>
+
+            <div class="documentary-container mb-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Arqsc_s53s?si=zoSzJQpX36W8WXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Research Sources -->
+            <h3 class="section-title">Research and References</h3>
+            <ul class="source-list">
+                <li><a href="https://www.fao.org/" target="_blank" rel="noopener">FAO - Agriculture and Climate Change</a></li>
+                <li><a href="https://wmo.int/" target="_blank" rel="noopener">WMO - Weather and Climate Information</a></li>
+                <li><a href="https://meral.edu.mm/" target="_blank" rel="noopener">MERAL - Myanmar Agricultural Research</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h5>About TEZDEN</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Our Project</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.html#FAQ">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Learn</h5>
+                    <ul class="footer-links">
+                        <li><a href="impact.html">Impact of Heatwaves</a></li>
+                        <li><a href="case-study.html">Central Myanmar Case Study</a></li>
+                        <li><a href="solutions.html">Preparedness & Response</a></li>
+                        <li><a href="https://docs.google.com/document/d/1P5Y_rO6LgsWXj8gFk443rbUh8mIfK-OQJCZQqrPFsy8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> Research & References</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Highlights</h5>
+                    <ul class="footer-links">
+                        <li><a href="impact.html">Heatwaves Impact on Farming</a></li>
+                        <li><a href="impact.html">Heatwaves Impact on Economy</a></li>
+                        <li><a href="solutions.html">Farming Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>Stay Connected</h5>
+                    <p>Learn more about heatwaves and discover ways to protect farming in Central Myanmar by subscribing today.</p>
+                    <form class="footer-email" method="post" enctype="text/plain">
+                        <input type="text" name="email" placeholder="Your Email" aria-label="Your email address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <h5 class="mt-4">Follow Our Project</h5>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2026 TEZDEN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

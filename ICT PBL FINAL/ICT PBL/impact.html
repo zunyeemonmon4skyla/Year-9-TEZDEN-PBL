@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacts of Heatwaves</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../media/ICT-logo.png">
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+
+<nav class="top-navbar">
+    <a href="index.html" class="logo">
+        <img src="../media/ICT-logo.png" alt="TEZDEN">
+        <span>TEZDEN</span>
+    </a>
+
+    <ul class="desktop-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown active">
+            <a href="#" class="dropdown-toggle">Information</a>
+            <ul class="dropdown-menu">
+                <li class="active"><a class="dropdown-item" href="impact.html">Impact of Heatwaves</a></li>
+                <li><a class="dropdown-item" href="case-study.html">Central Myanmar Case Study</a></li>
+            </ul>
+        </li>
+        <li><a href="solutions.html">Preparedness & Response</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="aboutus.html#faq-section">FAQ</a></li>
+        <li class="signup-item"><a href="signup.html" class="signup-link">Sign Up</a></li>
+    </ul>
+
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="mobile-menu-button" aria-label="Open navigation menu">
+        <i class="bi bi-list menu-open"></i>
+        <i class="bi bi-x-lg menu-close"></i>
+    </label>
+
+    <div class="mobile-offcanvas">
+        <div class="offcanvas-header">
+            <a href="index.html" class="logo">
+                <img src="../media/ICT-logo.png" alt="TEZDEN">
+                <span>TEZDEN</span>
+            </a>
+
+            <label for="mobile-menu-toggle" class="mobile-close-button" aria-label="Close navigation menu">
+                <i class="bi bi-x-lg"></i>
+            </label>
+        </div>
+
+        <hr class="mobile-menu-divider">
+
+        <div class="offcanvas-body">
+            <ul class="mobile-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="mobile-dropdown">
+                    <input type="checkbox" id="mobile-information">
+                    <label for="mobile-information">Information <i class="bi bi-chevron-down"></i></label>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a class="dropdown-item" href="impact.html">Impact of Heatwaves</a></li>
+                        <li><a class="dropdown-item" href="case-study.html">Central Myanmar Case Study</a></li>
+                    </ul>
+                </li>
+                <li><a href="solutions.html">Preparedness & Response</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html#faq-section">FAQ</a></li>
+                <li><a href="signup.html" class="mobile-signup-link">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <section class="intro">
+        <div class="intro-content">
+            <div class="eyebrow">Understand the impacts</div>
+            <h1>What are the impacts of heatwaves?</h1>
+            <p>Heatwaves can affect agriculture, the economy, human health, and the environment. They can cause crop failures, water shortages, financial losses, and other challenges for communities.</p>
+        </div>
+
+        <div class="intro-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPcI8X8dNQq-25J5QJSeGF1PaqwSAjMz-8HtRHRrKfggxYn3fOwjnhg9x&s=10%22" alt="Agricultural fields">
+            <img src="https://i.pinimg.com/1200x/44/88/28/448828346ad5cd8c0500ec3768817038.jpg" alt="Hot sunlight over a field">
+        </div>
+    </section>
+
+    <section class="impact-section agriculture-section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Impacts on Agriculture</h2>
+                <p>How extreme heat affects crops, soil and livestock</p>
+            </div>
+
+            <div class="card-container">
+                <button class="impact-card" type="button" data-bs-toggle="modal" data-bs-target="#cropModal">
+                    <img src="https://www.carbonbrief.org/wp-content/uploads/2025/06/PH9DB7-1.jpg" alt="Crop field affected by extreme weather">
+                    <div class="card-info">
+                        <span class="card-number">1. CROP PRODUCTION</span>
+                        <h3>Crop failure and reduced yields</h3>
+                        <p>Extreme heat can damage crops and reduce harvests.</p>
+                        <span class="read-more">Explore impact ↗</span>
+                    </div>
+                </button>
+
+                <button class="impact-card" type="button" data-bs-toggle="modal" data-bs-target="#soilModal">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900" alt="Agricultural land during dry weather">
+                    <div class="card-info">
+                        <span class="card-number">2. WATER RESOURCES</span>
+                        <h3>Soil dryness and water shortages</h3>
+                        <p>High temperatures increase evaporation and dry out soil.</p>
+                        <span class="read-more">Explore impact ↗</span>
+                    </div>
+                </button>
+
+                <button class="impact-card" type="button" data-bs-toggle="modal" data-bs-target="#livestockModal">
+                    <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=900" alt="Livestock on a farm">
+                    <div class="card-info">
+                        <span class="card-number">3. ANIMAL HEALTH</span>
+                        <h3>Livestock stress and deaths</h3>
+                        <p>Animals may suffer from heat stress and reduced productivity.</p>
+                        <span class="read-more">Explore impact ↗</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECONOMIC IMPACTS -->
+    <section class="economy-section">
+        <div class="section-heading">
+            <h2>Impacts on the Economy</h2>
+            <p>How heatwaves affect income, prices, and business activities.</p>
+        </div>
+
+        <div class="economy-grid">
+            <button class="economy-card" type="button" data-bs-toggle="modal" data-bs-target="#incomeModal">
+                <div class="economy-icon"><i class="bi bi-cash-stack"></i></div>
+                <div>
+                    <h3>Lower income for farmers</h3>
+                    <p>Reduced harvests can lead to less money earned from farming.</p>
+                    <span class="read-more">Learn more ↗</span>
+                </div>
+            </button>
+
+            <button class="economy-card" type="button" data-bs-toggle="modal" data-bs-target="#pricesModal">
+                <div class="economy-icon"><i class="bi bi-cart3"></i></div>
+                <div>
+                    <h3>Higher food prices</h3>
+                    <p>Lower agricultural production can increase food prices.</p>
+                    <span class="read-more">Learn more ↗</span>
+                </div>
+            </button>
+
+            <button class="economy-card" type="button" data-bs-toggle="modal" data-bs-target="#productivityModal">
+                <div class="economy-icon"><i class="bi bi-person-workspace"></i></div>
+                <div>
+                    <h3>Lower worker productivity</h3>
+                    <p>Extreme heat can make outdoor work slower and more difficult.</p>
+                    <span class="read-more">Learn more ↗</span>
+                </div>
+            </button>
+
+            <button class="economy-card" type="button" data-bs-toggle="modal" data-bs-target="#costModal">
+                <div class="economy-icon"><i class="bi bi-lightning-charge"></i></div>
+                <div>
+                    <h3>Higher operating costs</h3>
+                    <p>Businesses may spend more on cooling, water, and electricity.</p>
+                    <span class="read-more">Learn more ↗</span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- AGRICULTURE MODALS -->
+
+    <div class="modal fade" id="cropModal" tabindex="-1" aria-labelledby="cropModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://www.carbonbrief.org/wp-content/uploads/2025/06/PH9DB7-1.jpg" class="modal-image" alt="Crop field affected by extreme weather">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">AGRICULTURE / 01</div>
+                                <h2 id="cropModalLabel">Crop failure and reduced yields</h2>
+                                <p>Extreme heat can damage crops, interfere with flowering and grain formation, and make plants lose water faster. These effects can reduce harvests and farmers' income.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="soilModal" tabindex="-1" aria-labelledby="soilModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900" class="modal-image" alt="Agricultural land during dry weather">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">AGRICULTURE / 02</div>
+                                <h2 id="soilModalLabel">Soil dryness and water shortages</h2>
+                                <p>High temperatures increase evaporation from soil and water sources. Soil can become too dry for crops, while farmers may struggle to find enough water for irrigation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="livestockModal" tabindex="-1" aria-labelledby="livestockModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=900" class="modal-image" alt="Livestock on a farm">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">AGRICULTURE / 03</div>
+                                <h2 id="livestockModalLabel">Livestock stress and deaths</h2>
+                                <p>During heatwaves, animals can suffer heat stress, eat less, and produce less milk or meat. Without shade and sufficient drinking water, severe heat can also cause livestock deaths.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade economy-modal" id="incomeModal" tabindex="-1" aria-labelledby="incomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?w=900" class="modal-image" alt="Agricultural field">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">ECONOMY / 01</div>
+                                <h2 id="incomeModalLabel">Lower income for farmers</h2>
+                                <p>When heatwaves damage crops and reduce harvests, farmers have fewer products to sell. This can lower their income and make it harder to cover farming expenses and household needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade economy-modal" id="pricesModal" tabindex="-1" aria-labelledby="pricesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=900" class="modal-image" alt="Fresh food in a market">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">ECONOMY / 02</div>
+                                <h2 id="pricesModalLabel">Higher food prices</h2>
+                                <p>Heatwaves can reduce the supply of agricultural products. When fewer crops are available in markets, food prices may rise, making it more difficult for families to afford essential food.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade economy-modal" id="productivityModal" tabindex="-1" aria-labelledby="productivityModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900" class="modal-image" alt="Outdoor workers">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">ECONOMY / 03</div>
+                                <h2 id="productivityModalLabel">Lower worker productivity</h2>
+                                <p>Extreme heat can make physical work difficult and reduce workers' productivity. Outdoor workers may need more breaks, causing delays and reducing the amount of work completed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade economy-modal" id="costModal" tabindex="-1" aria-labelledby="costModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900" class="modal-image" alt="Business workplace">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal-info">
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-label">ECONOMY / 04</div>
+                                <h2 id="costModalLabel">Higher operating costs</h2>
+                                <p>Businesses may spend more money on electricity, cooling systems, and water during heatwaves. These additional expenses can increase operating costs and reduce business profits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h5>About TEZDEN</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Our Project</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="aboutus.html#FAQ">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Learn</h5>
+                    <ul class="footer-links">
+                        <li><a href="impact.html">Impact of Heatwaves</a></li>
+                        <li><a href="case-study.html">Central Myanmar Case Study</a></li>
+                        <li><a href="solutions.html">Preparedness & Response</a></li>
+                        <li><a href="https://docs.google.com/document/d/1P5Y_rO6LgsWXj8gFk443rbUh8mIfK-OQJCZQqrPFsy8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> Research & References</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Highlights</h5>
+                    <ul class="footer-links">
+                        <li><a href="impact.html">Heatwaves Impact on Farming</a></li>
+                        <li><a href="impact.html">Heatwaves Impact on Economy</a></li>
+                        <li><a href="solutions.html">Farming Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>Stay Connected</h5>
+                    <p>Learn more about heatwaves and discover ways to protect farming in Central Myanmar by subscribing today.</p>
+                    <form class="footer-email" method="post" enctype="text/plain">
+                        <input type="text" name="email" placeholder="Your Email" aria-label="Your email address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <h5 class="mt-4">Follow Our Project</h5>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2026 TEZDEN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
